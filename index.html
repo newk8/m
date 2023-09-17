@@ -1,0 +1,186 @@
+<!DOCTYPE html><html><head id=_rootHead design-width=720><style class=vjs-styles-defaults>.video-js {
+			width: 300px;
+			height: 150px;
+		}
+
+		.vjs-fluid {
+			padding-top: 56.25%
+		}
+
+		.toast-container {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			z-index: 9999;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			width: 160px;
+			padding-bottom: 10px;
+			margin-top: -55px;
+			margin-left: -80px;
+			color: #fff;
+			background: rgba(0, 0, 0, 0.8);
+			border-radius: 10px;
+		}
+
+		.toast-container .toast-icon.icon-error {
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABGCAYAAABISVPfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEM0YxNDZGQ0M5QjAxMUU2OUVCMjlCQzJBN0NCNThCOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEM0YxNDZGREM5QjAxMUU2OUVCMjlCQzJBN0NCNThCOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQzRjE0NkZBQzlCMDExRTY5RUIyOUJDMkE3Q0I1OEI4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQzRjE0NkZCQzlCMDExRTY5RUIyOUJDMkE3Q0I1OEI4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HIfkCwAAA6NJREFUeNrsnEloU0EYx6cx2kJrLS64UBckN1HErS4oerEemqgHwWp7EERwubjcvHjIUelBPUgLghQVPaiIB0FaRVyo1YNaW0FcKhUlRrSph7j0+R/9ii19SeZNJk1e5vvDD3J4b97ML+Fl5s3ME47jiBSEQRtIEPJzXZrjbcGTl1SFRJ3UiVos17MXt0LqnMwJWyhXy0tAjM4hkTkHhX3R8lLy92c8Mv1gYoaCEqDSMsFaXtwEO4oXLLFMsJaXgODkNCyYBbNgDgtmwSyYw4JZMAvmsGAWzGHB+RacUDhvwEJXWl7cBHcqFPTIQsFaXtwENykU1GShYD0vPOk59pOeQ2ymKekBQn6O8LS9Ny9uU0Yc7qaxYA4LZsEsmMOCWTAL5rBgFsyCOSyYBXNYMAtmwRwWzIJZMMdcggVSjyqwCITAfDAXzAJTiHKq69A+NbkI5Bf4DuLEB/AOvAavwFPwNd8Ny8ek5wSwDKwCa8ESMDtH13oPnoC74IH4t3jkRzEKng7CYBPYKDLvmMxV5NKmW+AGuA4++VnwJLANbAfrwbgCuz3+BnfARXAJfPOL4BVgL8kt98l/kbyXXwZnwMNCFCx7I1vAYbDa53/898EJcBUM5luw3Pi8FRwDC4ush/WM2nVFqG8ENypY3lePg6VF3pV9DI6A22M10KgG50G7BXIFtVG29YJOdzLg8dgD4AWot3BQJntDXeQgYPoWMQ+0gjU5bECMRl9dNBp7Cz6Cz+AL+Cn+L9GvAOPBZDAVzKA6ylHgAhoVTsthXe+BRvDGhOAGcFqYf4WMHM7epMpKeg2XP4d+EJJaGoabjHzFzH764aVOmoXGpaDZMZtucBSE8rBwOkTX7jbcpmZy5em9adWgw1AF4uAkqCmgVeo1VKe4oTZ2kDMlwYtBn4GL9oA9oKyAtwOUUR17DLS3j9ylFVxLrwvMJi/BThDw0b4LWdcdVPdskiCHroLrQTKLwmNgHwj6eINLkNoQy8JDkr6sEYKjWRQ4CFpAVRHtJKqiP6/BLLxEh3YZ1dGzUZ3Ivuou3WGkDyIfB5ylPrZOIlJwGz5s0Di5lfqB/UU+gqukcUCDxrntUrDKOxmHJ0nDxRbLhsq7wSlQ6uGchFfBcugaEXZuBpdZDq6BmYrHD8iHFp2KBz8HNRbLFdT2leRC6XgpWGUXuZxGWZeD5wV+TC+5UJlaalLppp0DFbwJfBQV5CZtN234CRGXXeRhFpmRtN7+CDAAH48s29MlYjcAAAAASUVORK5CYII=) no-repeat center 27px;
+			background-size: 44px 35px;
+		}
+
+		.toast-container .toast-icon.icon-success {
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABQCAYAAACdxrJZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQkZFOTAwQ0MxQkQxMUU2OTlGMUUxQ0UwREI0QjdGNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQkZFOTAwREMxQkQxMUU2OTlGMUUxQ0UwREI0QjdGNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBCRkU5MDBBQzFCRDExRTY5OUYxRTFDRTBEQjRCN0Y3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBCRkU5MDBCQzFCRDExRTY5OUYxRTFDRTBEQjRCN0Y3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0AarVgAAA9lJREFUeNrsnOF12jAQx0Vev8edIOoEdSYomQB3A2cC6AQhG2QD6ASQCYAJAhPETABM4PrSU59xwUgnycjO/d/TIyS24/sh5JN0d708z4WFZNHuSu83RduLdsutTQCY0PpFW+SnNSmaJF73mq3OphnVJsqNPOV6SlsEd+jLJtMbGedmSloAd2RokxHknsEY3C/awnAEgrHrW8DjMtWm+6JlOgffGFz4iWBAVLRRwA+0EdGmse7Buj0YLrojGpFhLw5NNjZBL/7qsgfHlm5PFCDg2PLDkaEAdnF+qP6yM8CRYJF0wwgYMANmMWAGzIBZDJgBM2AWA+4o4D2j8gt4bfl/1h1kl+kc1MR68FZorjw1LBubDkJzAcxkiHgl3sw00B4INv0mnjvXPdBkTw7WdN8In7QMeAyHe3v3aZOJFwHj6C/Dm0kCf0DCOPpoeM7IyCbCNneqsbW9x0COtsRF6NqUNhF4IjDKZX7mJqZFi1oY2XPJJlJkT88yNi0Sx/ttyw64X05tsgXM4qkyA2bALAbMgBkwiwEzYBYDZsAMmMWAGTADZjFgBsxiwAyYAbMYMAPusr5U3suifcfXlehmVKQPDcTfrX7gBSVosn9/qVQy2VWCLt6KFrcwiKSpFiOjsnZYQeUosqcudGjHkE+26ESH/K8yigo8gTjZunjX0CuXNC1gtRD1VQQ+mMFDri8uBxOrC3LWvR5cdVxs4kXEDFkb7pGbtmfIfuAC2xt0LVaGkN9FN6uYnJMkwP1wc9UQAVHbB8KnmXwCuCp1wgQusEzLM7m1+oUh5Jmglftqi4aEIfGAjkNWnWjohtKf0qKl9SrrfNwZgcO+Omeg5iucm5AMOwA3uTCBqFNfN0djnNO1aFkCTDlHY2Jhd2qaBJPmdmpLmdvIEmxtRpVOetO+o6DlmQUuqzGXksYVO4Csho5BIIWYJw7sWeukq+lmGYEPOMW1YluB+zLHtmrQlx2gKyodXO8Vr3VxFmySxqXKug4dGg43uCzBzhzOvH6gP5o4nNofkMGL7gmUPLkEe/Otp962RNAZToDKvWSLr3eVc/oIVeLPPrTBXmu0y0NNRIwQ8uCTrEU8C4OizNXVNOpXG3ryz1Kv6qJg2LqnwrUBrDTHr+Wz4WJR6IJO84DDjdXGr6tt+3FHQAPYR7Rl6eKCPpLBJT4M0hMPo1C1Qc9gLhzvO/rOtk8QdIgPwwMCfREe4z+aKmegenXiaLJiO0lYohfkfZf8GvUiIgStJgG3nv/fFnuqmtA0qhAKcpQnCLI0C6N85dfYstLPV43lCL3iidRYO7g6xDr9EWAARoFNfv67QB4AAAAASUVORK5CYII=) no-repeat center 27px;
+			background-size: 44px 35px;
+		}
+
+		.toast-container .toast-icon {
+			display: block;
+			width: 100%;
+			height: 75px;
+		}
+
+		.toast-container .toast-text,
+		.toast-container .toast-title {
+			padding: 0 5px;
+			font-size: 12px;
+			line-height: normal;
+			text-align: center;
+		}</style><title></title><meta charset=utf-8><meta name=apple-mobile-web-app-title content=""><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta name=keywords content=，真人首选，百家乐，电游，真钱，娱乐，AG，asiagaming，bet><link rel=icon type=image/x-icon href=/static/image/favicon.ico><script src=/static/js/rem.js></script><script src=/static/js/jquery-2.2.4.min.js></script><style>html,
+		body {
+			background-color: #111111;
+			width: 100%;
+			height: 100%;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#preload {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+		}
+
+		.html-preload-mask div {
+			color: #bbb;
+			margin: 5px 0;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: 'Arial', sans-serif;
+			font-size: 10px;
+			letter-spacing: 2px;
+		}
+
+		.html-preload-mask .preloader-1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.html-preload-mask .preloader-1 .line {
+			width: 1px;
+			height: 12px;
+			background: #bbb;
+			margin: 0 0.5px;
+			display: inline-block;
+			/*animation: html-opacity-2 1000ms infinite ease-in-out;*/
+		}
+
+		.html-preload-mask .preloader-1 .line.line-1 {
+			animation-delay: 800ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-2 {
+			animation-delay: 600ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-3 {
+			animation-delay: 400ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-4 {
+			animation-delay: 200ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-6 {
+			animation-delay: 200ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-7 {
+			animation-delay: 400ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-8 {
+			animation-delay: 600ms;
+		}
+
+		.html-preload-mask .preloader-1 .line.line-9 {
+			animation-delay: 800ms;
+		}
+
+		@keyframes html-opacity-2 {
+			0% {
+				opacity: 1;
+				height: 15px;
+			}
+
+			50% {
+				opacity: 0;
+				height: 12px;
+			}
+
+			100% {
+				opacity: 1;
+				height: 15px;
+			}
+		}</style><link href=/static/css/chunk-vendors.2272e24f.css rel=stylesheet type=text/css><link href=/static/css/app.1f4890ad.css rel=stylesheet type=text/css><link rel=stylesheet type=text/css href=/static/css/chunk-ff22aea6.fd0c09bb.css><link rel=stylesheet type=text/css href=/static/css/chunk-3bdfc4ec.c0306dd2.css><link href=/static/css/swiper.min.css rel=stylesheet type=text/css><script src=/static/js/swiper-4.2.0.min.js></script><script src=/static/js/jquery.SuperSlide.2.1.3.js></script><style>#redPacket {
+			position: fixed;
+			left: 8px;
+			bottom: 55px;
+			width: 75px;
+			height: 85px;
+			z-index: 999;
+			cursor: pointer;
+			background: url(/static/image/red-packet.png);
+			background-size:100% 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#redPacket .grab {
+
+			margin-top: 20px;
+			width: 35px;
+			height: 20px;
+			padding-top:20px;
+			background: url(/static/image/grab.png)no-repeat center;
+			background-size: 100% 100%;
+			-webkit-animation: scaleDraw .4s linear infinite;
+		}
+		#redPacket img{
+			position: absolute;
+			top: 0;
+			right: -10px;
+			width: 20px;
+		}
+		@keyframes scaleDraw {
+			25% {
+				transform: scale(1.1);
+			}
+
+			50% {
+				transform: scale(1.2);
+			}
+
+			75% {
+				transform: scale(1.1);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}</style><link href=/static/css/app.ec80fd541e6702bf02d70fb6c9c12f4f.css rel=stylesheet></head><body id=_rootBody style="overflow-y: visible;"><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.49510644c1ba6b3badbb.js></script><script type=text/javascript src=/static/js/app.af016ad058b0dfdefc19.js></script></body></html><script></script>
