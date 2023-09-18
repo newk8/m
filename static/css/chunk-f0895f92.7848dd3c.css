@@ -41,7 +41,7 @@
   width: .49rem;
   height: .2rem;
   overflow: hidden;
-  background-image: url(./static/style/3.82e35ced.png);
+  background-image: url(../style/3.82e35ced.png);
   background-size: 100% 100%;
   background-repeat: no-repeat
 }
@@ -218,7 +218,7 @@
   min-width: 1.1rem;
   height: .2rem;
   overflow: hidden;
-  background-image: url(./static/style/1.0f5547b0.png);
+  background-image: url(../style/1.0f5547b0.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: -webkit-box;
@@ -373,22 +373,22 @@
 }
 
 .userCenter .user .info.info-login .tag.icon-vip1[data-v-68894370] {
-  background: url(./static/style/icon_vip1.9b4615a0.png) no-repeat;
+  background: url(../style/icon_vip1.9b4615a0.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .user .info.info-login .tag.icon-vip2[data-v-68894370] {
-  background: url(./static/style/icon_vip2.79d92141.png) no-repeat;
+  background: url(../style/icon_vip2.79d92141.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .user .info.info-login .tag.icon-vip3[data-v-68894370] {
-  background: url(./static/style/icon_vip3.ee2eeee9.png) no-repeat;
+  background: url(../style/icon_vip3.ee2eeee9.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .user .info.info-login .tag.icon-vip4[data-v-68894370] {
-  background: url(./static/style/icon_vip4.9034d858.png) no-repeat;
+  background: url(../style/icon_vip4.9034d858.png) no-repeat;
   background-size: 100% 100%;
   color: #f9cb5c
 }
@@ -510,7 +510,7 @@
 }
 
 .userCenter .card[data-v-68894370] {
-  background: url(./static/style/card1.d206c753.png) no-repeat;
+  background: url(../style/card1.d206c753.png) no-repeat;
   background-size: 100% 100%;
   width: 100%;
   height: 105px;
@@ -591,7 +591,7 @@
 }
 
 .userCenter .card .icon-return[data-v-68894370] {
-  background: url(./static/style/image_return.4aa37b09.png) no-repeat;
+  background: url(../style/image_return.4aa37b09.png) no-repeat;
   background-size: 100% 100%;
   width: 97px;
   height: 26px;
@@ -641,7 +641,7 @@
 }
 
 .userCenter .card.card2[data-v-68894370] {
-  background: url(./static/style/card2.5c2fd1f2.png) no-repeat;
+  background: url(../style/card2.5c2fd1f2.png) no-repeat;
   background-size: 100% 100%;
   color: #4a2900;
   position: relative
@@ -693,7 +693,7 @@
 }
 
 .userCenter .card.card2 .to_usdt_account[data-v-68894370] {
-  background: url(./static/style/to_usdt_account.831b9cd2.png) no-repeat;
+  background: url(../style/to_usdt_account.831b9cd2.png) no-repeat;
   background-size: 100% 100%;
   position: absolute;
   right: 0;
@@ -754,32 +754,32 @@
 }
 
 .userCenter .box1 .item .icon-item.icon-deposit[data-v-68894370] {
-  background: url(./static/style/icon_deposit.fede240d.png) no-repeat;
+  background: url(../style/icon_deposit.fede240d.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box1 .item .icon-item.icon-withdrawal[data-v-68894370] {
-  background: url(./static/style/icon_withdrawal.30c94c2c.png) no-repeat;
+  background: url(../style/icon_withdrawal.30c94c2c.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box1 .item .icon-item.icon-washcode[data-v-68894370] {
-  background: url(./static/style/icon_washcode.f6c5a77e.png) no-repeat;
+  background: url(../style/icon_washcode.f6c5a77e.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box1 .item .icon-item.icon-deposit-cny[data-v-68894370] {
-  background: url(./static/style/icon_cny_deposit.d39eb6e0.png) no-repeat;
+  background: url(../style/icon_cny_deposit.d39eb6e0.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box1 .item .icon-item.icon-transfer[data-v-68894370] {
-  background: url(./static/style/icon_transfer.8f78ce8b.png) no-repeat;
+  background: url(../style/icon_transfer.8f78ce8b.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box1 .item .icon-item.icon-washcode-cny[data-v-68894370] {
-  background: url(./static/style/icon_cny_washcode.e144b9a8.png) no-repeat;
+  background: url(../style/icon_cny_washcode.e144b9a8.png) no-repeat;
   background-size: 100% 100%
 }
 
@@ -818,12 +818,12 @@
 }
 
 .userCenter .box2 .item .icon.icon-usdt[data-v-68894370] {
-  background: url(./static/style/icon_usdt_interest.358a5723.png) no-repeat;
+  background: url(../style/icon_usdt_interest.358a5723.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box2 .item .icon.icon-cny[data-v-68894370] {
-  background: url(./static/style/icon_cny.73a8e821.png) no-repeat;
+  background: url(../style/icon_cny.73a8e821.png) no-repeat;
   background-size: 100% 100%
 }
 
@@ -833,12 +833,12 @@
 }
 
 .userCenter .box2 .item .icon.icon-vip[data-v-68894370] {
-  background: url(./static/style/icon_vip.4f991970.png) no-repeat;
+  background: url(../style/icon_vip.4f991970.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box2 .item .icon.icon-partner[data-v-68894370] {
-  background: url(./static/style/icon_partner.160ba388.png) no-repeat;
+  background: url(../style/icon_partner.160ba388.png) no-repeat;
   background-size: 100% 100%
 }
 
@@ -909,7 +909,7 @@
 }
 
 .userCenter .box3 .item .icon[data-v-68894370] {
-  background: url(./static/style/icon_zhifubao.0b0802d9.png) no-repeat;
+  background: url(../style/icon_zhifubao.0b0802d9.png) no-repeat;
   background-size: 100% 100%;
   width: 40px;
   height: 40px;
@@ -931,7 +931,7 @@
 }
 
 .userCenter .box3 .item .info h5 .tip[data-v-68894370] {
-  background: url(./static/style/tip.5e106e2b.png) no-repeat;
+  background: url(../style/tip.5e106e2b.png) no-repeat;
   background-size: 100% 100%;
   width: 74px;
   height: 16px;
@@ -944,7 +944,7 @@
 }
 
 .userCenter .box3 .item .icon-link[data-v-68894370] {
-  background: url(./static/style/icon_jiantou.74e0b3ce.png) no-repeat;
+  background: url(../style/icon_jiantou.74e0b3ce.png) no-repeat;
   background-size: 100% 100%;
   width: 35px;
   height: 32px;
@@ -976,12 +976,12 @@
 }
 
 .userCenter .box3 ul li .icon.icon1[data-v-68894370] {
-  background: url(./static/style/icon_list_news.50ac0cb7.png) no-repeat;
+  background: url(../style/icon_list_news.50ac0cb7.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .box3 ul li .icon.icon2[data-v-68894370] {
-  background: url(./static/style/icon_list_help.4de5713c.png) no-repeat;
+  background: url(../style/icon_list_help.4de5713c.png) no-repeat;
   background-size: 100% 100%
 }
 
@@ -1095,12 +1095,12 @@
 }
 
 .userCenter .fixed-ad .icon.icon-dividends[data-v-68894370] {
-  background: url(./static/style/icon_pop_dividends.8e3333cc.png) no-repeat;
+  background: url(../style/icon_pop_dividends.8e3333cc.png) no-repeat;
   background-size: 100% 100%
 }
 
 .userCenter .fixed-ad .icon.icon-promotion[data-v-68894370] {
-  background: url(./static/style/icon_pop_promotion.e3ba9233.png) no-repeat;
+  background: url(../style/icon_pop_promotion.e3ba9233.png) no-repeat;
   background-size: 100% 100%
 }
 
@@ -1121,7 +1121,7 @@
 }
 
 .userCenter .fixed-ad .info h5 .icon-usdt[data-v-68894370] {
-  background: url(./static/style/icon_pop_usdt.58aa2f0b.png) no-repeat;
+  background: url(../style/icon_pop_usdt.58aa2f0b.png) no-repeat;
   background-size: 100% 100%;
   width: 18px;
   height: 18px;
@@ -1131,7 +1131,7 @@
 }
 
 .userCenter .fixed-ad .info h5 .icon-cny[data-v-68894370] {
-  background: url(./static/style/icon_pop_cny.e78a3f7b.png) no-repeat;
+  background: url(../style/icon_pop_cny.e78a3f7b.png) no-repeat;
   background-size: 100% 100%;
   width: 18px;
   height: 18px;

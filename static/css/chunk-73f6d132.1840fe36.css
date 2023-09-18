@@ -159,7 +159,7 @@
 }
 
 .dcbox[data-v-3cb7ae5b] {
-  background: url(./static/image/bitoll_bg.6e2b6b5f.png) no-repeat;
+  background: url(../image/bitoll_bg.6e2b6b5f.png) no-repeat;
   background-size: 100% 100%
 }
 
@@ -305,7 +305,7 @@
 }
 
 .content .header-container-newYear[data-v-3cb7ae5b] {
-  background: url(./static/image/bg01-newYear.654837a7.png) no-repeat
+  background: url(../image/bg01-newYear.654837a7.png) no-repeat
 }
 
 .content .cardgroup[data-v-3cb7ae5b] {
@@ -447,7 +447,7 @@
 .content .cardsDetail .methods a.addBank .icon[data-v-3cb7ae5b] {
   width: 61px;
   height: 60.5px;
-  background-image: url(./static/image/account.e39ee379.png);
+  background-image: url(../image/account.e39ee379.png);
   background-repeat: no-repeat;
   background-position: -56.5px -84.5px;
   background-size: 267.5px 145px
@@ -456,21 +456,21 @@
 .content .cardsDetail .methods a.addUSDT .icon[data-v-3cb7ae5b] {
   width: 62px;
   height: 62px;
-  background: url(./static/image/wallets-USDT.55772d05.png) no-repeat;
+  background: url(../image/wallets-USDT.55772d05.png) no-repeat;
   background-size: 100% 100%
 }
 
 .content .cardsDetail .methods a.addBtc .icon[data-v-3cb7ae5b] {
   width: 62px;
   height: 62px;
-  background: url(./static/image/wallets-BTC.dbe51b95.png) no-repeat;
+  background: url(../image/wallets-BTC.dbe51b95.png) no-repeat;
   background-size: 100% 100%
 }
 
 .content .cardsDetail .methods a.add-bitoll .icon[data-v-3cb7ae5b] {
   width: 62px;
   height: 62px;
-  background: url(./static/image/icon_bitoll.ffd1144e.png) no-repeat;
+  background: url(../image/icon_bitoll.ffd1144e.png) no-repeat;
   background-size: 100% 100%
 }
 

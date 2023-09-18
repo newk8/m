@@ -192,7 +192,7 @@
 }
 
 .header-container-newYear[data-v-0a914d54] {
-  background: url(./static/image/bg01-newYear.654837a7.png) no-repeat
+  background: url(../image/bg01-newYear.654837a7.png) no-repeat
 }
 
 .games-page-content[data-v-0a914d54] {
@@ -255,7 +255,7 @@
   position: relative;
   height: 93px;
   overflow: hidden;
-  background: url(./static/image/default-img.8558dbe5.png) no-repeat 50%;
+  background: url(../image/default-img.8558dbe5.png) no-repeat 50%;
   background-size: 100px auto;
   border-radius: 5px
 }
@@ -393,7 +393,7 @@
   overflow: hidden;
   font-size: 13px;
   text-align: center;
-  background: url(./static/image/game-bg.b7c86ea4.png) no-repeat;
+  background: url(../image/game-bg.b7c86ea4.png) no-repeat;
   background-size: 100% 100%;
   border-radius: 6px
 }
